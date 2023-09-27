@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gamer_app</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="register_now">Register Now</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="termes_and_conditions">termes and conditions</string>
+    <string name="terms_and_conditions">terms and conditions</string>
+    <string name="terms_and_coditions">terms and coditions</string>
+    <string name="privacy_and_policy">privacy and policy</string>
+    <string name="enter_the_code_sent_to_uyout_by_email_or_sms_mobile_number">Enter the code sent to uyout by email or SMS Mobile number</string>
+    <string name="verify">verify</string>
+    <string name="resent_code">resent code</string>
+    <string name="please_enter_your_registered_email_to_reset_your_password">Please enter your registered email to reset your password</string>
+    <string name="comfirm_password">Comfirm Password</string>
+    <string name="please_enter_your_new_password_and_comfirm_it">please enter your new password and comfirm it</string>
+</resources>
