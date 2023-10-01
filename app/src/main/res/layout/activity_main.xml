@@ -75,47 +75,81 @@
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/ic_logo" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputName"
-        android:layout_width="249dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:drawableStart="@drawable/baseline_mail_24"
 
-        android:gravity="start"
-        android:hint="   Email"
-        android:inputType="text"
-        android:paddingStart="15dp"
-        android:textColorHint="@color/colorPrimary"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailcontainer"
+        android:layout_width="305dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="56dp"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:helperText="must not be empty !"
+        app:hintTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295"
+        app:layout_constraintVertical_bias="0.299">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEmail"
+            android:layout_width="292dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableStart="@drawable/baseline_mail_24"
+            android:gravity="start"
+            android:hint="    Email"
+
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:text=" @esprit.tn"
+
+            android:textColorHint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-        />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputPassword"
-        android:layout_width="249dp"
-        android:layout_height="45dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordcontainer"
+        android:layout_width="306dp"
+        android:layout_height="84dp"
         android:layout_marginStart="56dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:drawableStart="@drawable/baseline_lock_24"
-
-        android:gravity="start"
-        android:hint="   Password"
-        android:inputType="text"
-        android:paddingStart="15dp"
-        android:textColorHint="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        app:helperText="must not be empty !"
+        app:helperTextTextColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:counterOverflowTextAppearance="@color/colorPrimary"
+        app:counterTextAppearance="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411"
+        app:layout_constraintVertical_bias="0.424"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputPassword"
+            android:layout_width="294dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:gravity="start"
+            android:hint="    Password"
+
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColorHint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:layout_width="33dp"
@@ -144,7 +178,7 @@
         android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="244dp"
+        android:layout_marginStart="236dp"
         android:clickable="true"
         android:focusable="true"
         android:onClick="TextViewClick"
@@ -154,7 +188,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.532" />
 
     <Button
         android:id="@+id/btn_login"
@@ -185,5 +219,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.727"
         tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
