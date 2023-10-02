@@ -78,12 +78,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailcontainer"
+        app:helperTextTextColor="@color/colorPrimary"
         android:layout_width="305dp"
         android:layout_height="85dp"
         android:layout_marginStart="56dp"
         android:outlineAmbientShadowColor="@color/colorPrimary"
         app:boxStrokeColor="@color/colorPrimary"
-        app:helperText="must not be empty !"
+        app:helperText="must not be empty  !"
         app:hintTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

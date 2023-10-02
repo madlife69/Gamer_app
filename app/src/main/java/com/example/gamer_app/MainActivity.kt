@@ -1,5 +1,6 @@
 package com.example.gamer_app
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
@@ -43,16 +44,44 @@ class MainActivity : AppCompatActivity() {
             snackbar.show()
 
         }
+        binding.forgot.setOnClickListener(){
+            val intent = Intent(this, ForgotActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.string2.setOnClickListener(){
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.btnLogin.setOnClickListener(){
+            val email = binding.textInputEmail.text.toString()
+            val pwd = binding.textInputPassword.text.toString()
+            if(email.length == 0 || pwd.length==0 || email == " @esprit.tn" || email == "@esprit.tn")
+            {
+                val snackbar =
+                    Snackbar.make(binding.root, " veuillez s'athentifier :)  ", Snackbar.LENGTH_LONG)
+                        .setAction("action", null)
+                snackbar.setActionTextColor(Color.WHITE)
+                val snackbarView = snackbar.view
+                snackbarView.setBackgroundColor(Color.WHITE)
+                snackbar.show()
+            }
+            else
+            {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
+
+
+
+        }
 
 
 
     }
 
-    fun onTextViewClick(view: View?) {
-        // Cette méthode sera appelée lorsque le TextView est cliqué.
-        // Vous pouvez y placer le code que vous souhaitez exécuter lors du clic.
-        Toast.makeText(this, "TextView cliqué !", Toast.LENGTH_SHORT).show()
-    }
+
     fun EmailListener(){
         binding.textInputEmail.setOnFocusChangeListener{_,focused ->
             if(!focused)

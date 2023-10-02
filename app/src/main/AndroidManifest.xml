@@ -27,8 +27,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-        </activity>
 
+        </activity>
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="true">
+
+
+
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true">
+
+
+
+        </activity>
+        <activity
+            android:name=".ValidationActivity"
+            android:exported="true">
+
+
+
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+
+
+
+        </activity>
     </application>
 
 </manifest>

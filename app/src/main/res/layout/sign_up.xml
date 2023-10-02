@@ -19,11 +19,14 @@
         app:srcCompat="@drawable/ic_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="307dp"
-        android:layout_height="66dp"
+        android:id="@+id/input_email"
+        app:helperTextTextColor="@color/colorPrimary"
+        android:layout_width="306dp"
+        android:layout_height="84dp"
         android:layout_marginStart="52dp"
-        android:outlineAmbientShadowColor="@color/colorPrimary"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:helperText="must not be empty !"
+
+
         app:hintTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +36,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emaillogin"
             android:layout_width="301dp"
+            android:text=" @esprit.tn"
             android:layout_height="53dp"
             android:backgroundTint="@color/colorPrimary"
             android:drawableStart="@drawable/baseline_mail_24"
@@ -48,11 +52,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="307dp"
-        android:layout_height="66dp"
+        android:id="@+id/input_name"
+        android:layout_width="305dp"
+        app:helperTextTextColor="@color/colorPrimary"
+        android:layout_height="83dp"
         android:layout_marginStart="52dp"
         android:outlineAmbientShadowColor="@color/colorPrimary"
         app:boxStrokeColor="@color/colorPrimary"
+        app:helperText="must not be empty !"
         app:hintTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,9 +84,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="307dp"
-        android:layout_height="66dp"
+        android:id="@+id/input_password"
+        app:helperText="must not be empty !"
+        android:layout_width="298dp"
+        android:layout_height="83dp"
         android:layout_marginStart="52dp"
+        app:helperTextTextColor="@color/colorPrimary"
         android:outlineAmbientShadowColor="@color/colorPrimary"
         app:boxStrokeColor="@color/colorPrimary"
         app:counterEnabled="true"
@@ -114,10 +124,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="307dp"
-        android:layout_height="66dp"
+        android:id="@+id/input_comfirm_password"
+        app:helperText="must not be empty !"
+
+        android:layout_width="312dp"
+        android:layout_height="91dp"
         android:layout_marginStart="52dp"
         android:outlineAmbientShadowColor="@color/colorPrimary"
+        app:helperTextTextColor="@color/colorPrimary"
         app:boxStrokeColor="@color/colorPrimary"
         app:counterEnabled="true"
         app:counterMaxLength="8"
