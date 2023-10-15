@@ -51,6 +51,15 @@ class HomeActivity : AppCompatActivity() {
 
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.account -> {
+                val profile = fragment_profile()
+                changeFragment(profile, "profile")
+                binding.toolbar.menu.clear()
+                menuInflater.inflate(R.menu.menu_toolbar, binding.toolbar.menu)
+
+                return@OnNavigationItemSelectedListener true
+            }
+
         }
         false
     }
